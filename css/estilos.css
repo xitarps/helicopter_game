@@ -82,3 +82,13 @@ body {
 #inicio:hover {
   border: 1px solid #fff;
 }
+
+.anima1 {
+	background-image:url(../imgs/helicoptero.png);
+	animation:play .2s steps(2) infinite;
+}
+
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
