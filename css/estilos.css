@@ -73,9 +73,12 @@ body {
 	height:200px;
 	background-color:#FFF;
  	margin-left:auto;
-        margin-right:auto;
+  margin-right:auto;
  	margin-top:100px;
 	text-align:center;
-	padding:10px;
-
+  padding:10px;
+  cursor: pointer;
+}
+#inicio:hover {
+  border: 1px solid #fff;
 }
