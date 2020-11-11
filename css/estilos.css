@@ -83,12 +83,30 @@ body {
   border: 1px solid #fff;
 }
 
+/* jogador */
 .anima1 {
 	background-image:url(../imgs/helicoptero.png);
 	animation:play .2s steps(2) infinite;
 }
 
+/*inimigo 1*/
+.anima2 {
+  background-image:url(../imgs/inimigo1.png);
+  animation: play .2s steps(2) infinite;
+}
+
+/* amigo */
+.anima3 {
+background-image:url(../imgs/amigo.png);
+animation:play2 .9s steps(12) infinite;
+}
+
 @keyframes play {
 	from {background-position:0px;}
 	to {background-position:-512px;}
+}
+
+@keyframes play2 {
+	from {background-position:0px;}
+	to {background-position:-528px;}
 }
