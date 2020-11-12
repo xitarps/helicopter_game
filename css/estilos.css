@@ -3,14 +3,27 @@
 	src:url(../fontes/ANODETONOONE.TTF);
 }
 
+body {
+	background-image:url(../imgs/fundo.jpg);
+}
+
 h1 {
 	font-family:Titulo;
 	font-size:40px;
 	color:#603A03;
 }
 
-body {
-	background-image:url(../imgs/fundo.jpg);
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
 }
 
 #container{
@@ -20,7 +33,6 @@ body {
 	margin-left:auto;
 	margin-right:auto;
 }
-
 
 #fundoGame {
 	width:950px;
@@ -101,6 +113,13 @@ background-image:url(../imgs/amigo.png);
 animation:play2 .9s steps(12) infinite;
 }
 
+.anima4 {
+	width:44px;
+	height:51px;
+	background-image:url(../imgs/amigo_morte.png);
+	animation:play3 .5s steps(7) infinite;
+}
+
 @keyframes play {
 	from {background-position:0px;}
 	to {background-position:-512px;}
@@ -109,6 +128,11 @@ animation:play2 .9s steps(12) infinite;
 @keyframes play2 {
 	from {background-position:0px;}
 	to {background-position:-528px;}
+}
+
+@keyframes play3 {
+	from {background-position:0px;}
+	to {background-position:-308px;}
 }
 
 #disparo {
@@ -138,50 +162,12 @@ animation:play2 .9s steps(12) infinite;
 	position:absolute;
 }
 
-.anima4 {
-	width:44px;
-	height:51px;
-	background-image:url(../imgs/amigo_morte.png);
-	animation:play3 .5s steps(7) infinite;
-}
-
-@keyframes play3 {
-	from {background-position:0px;}
-	to {background-position:-308px;}
-}
-
-@-webkit-keyframes play3 {
-   from { background-position:    0px; }
-     to { background-position: -308px; }
-}
-
-@-moz-keyframes play3 {
-   from { background-position:    0px; }
-     to { background-position: -308px; }
-}
-
-@-ms-keyframes play3 {
-   from { background-position:    0px; }
-     to { background-position: -308px; }
-}
-
-@-o-keyframes play3 {
-   from { background-position:    0px; }
-     to { background-position: -308px; }
-}
-
 #placar {
 	width: 450px;
 	height: 50px;
 	position: absolute;
 	left: 5px;
 	top: 590px;
-}
-
-h2 {
-	font-family:Titulo;
-	font-size:20px;
-	color:#FFF
 }
 
 #energia {
@@ -191,3 +177,16 @@ h2 {
 	left: 750px;
 	top: 7px;	
 }
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+  margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+
+}
+
