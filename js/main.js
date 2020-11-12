@@ -43,6 +43,7 @@ function start() { // Inicio da função start()
   movejogador();
   moveinimigo1();
   moveinimigo2();
+  moveamigo();
 	
 	} // Fim da função loop()
 
@@ -114,6 +115,19 @@ function start() { // Inicio da função start()
           
     }
   } // Fim da função moveinimigo2()
+
+  function moveamigo() {
+	
+    posicaoX = parseInt($("#amigo").css("left"));
+    $("#amigo").css("left",posicaoX+1);
+          
+      if (posicaoX>906) {
+        
+        $("#amigo").css("left",0);
+            
+      }
+  
+  } // fim da função moveamigo()
 
 
 
