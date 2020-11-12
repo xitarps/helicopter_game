@@ -94,6 +94,13 @@ h3 {
 #inicio:hover {
   border: 1px solid #fff;
 }
+#reinicia{
+  cursor: pointer;
+}
+
+#reinicia:hover {
+  text-shadow: 1px 1px 3px #0006;
+}
 
 /* jogador */
 .anima1 {
